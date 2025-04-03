@@ -9,7 +9,8 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${workspaceFolder}/out/${fileBasenameNoExtension}",
+                "-I${workspaceFolder}/include",
             ],
             "options": {
                 "cwd": "${fileDirname}"
